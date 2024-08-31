@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+          crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+          integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+          crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="styles.css">
+        <title>Bootstrap proyect BACKUP</title>
+      </head>
+<body>
+    <body>
+        <div class="container-fluid">
+          <nav class="navbar bg-light d-flex">
+            <div class="me-auto">
+              <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram me-2"></i>
+                <span
+                  style="font-family: Lobster, sans-serif; font-weight: 400; font-style: normal; text-align: center; font-size: 80;">Instagram</span>
+              </a>
+            </div>
+            
+              <div class="me-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Create new post
+                </button>
+                <!-- Modal --->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Caption:</label>
+                            <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                            <button class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                            <button class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>                    
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#"><span class="text-danger">Log out</span></a></li>
+                </ul>
+              </div>
+          </nav>
+          <div id="divisor de tabs" class="row">
+            <ul class="nav nav-pills mb-3 justify-content-center" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                  role="tab" aria-controls="pills-home" aria-selected="false"><span class="material-symbols-outlined">
+                    apps
+                  </span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab"><i class="fa-solid fa-square"></i></button>
+              </li>
+            </ul>
+          </div>
+            <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+              tabindex="0">
+              <div class="row">
+                <img class="img-card card-img-top" src="https://images.unsplash.com/photo-1723053145751-9aacd7c47df1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D" alt="planta">
+                <img class="img-card card-img-top" src="https://images.unsplash.com/photo-1724075682633-4664473db52c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3MHx8fGVufDB8fHx8fA%3D%3D" alt="walking">
+                <img class="img-card card-img-top"  src="https://images.unsplash.com/photo-1668302785920-00972ac2b266?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDh8fHxlbnwwfHx8fHw%3D" alt="perrito">          
+                <img class="img-card card-img-top"  src="https://images.unsplash.com/photo-1724838818103-a3ff16624686?q=80&w=1347&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="car">          
+                <img class="img-card card-img-top"  src="https://images.unsplash.com/photo-1724931498964-a1f392ba9ace?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="chimenea"> 
+                <img class="img-card card-img-top"  src="https://images.unsplash.com/photo-1724862941235-0d880da26f6e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="city">
+                <img class="img-card card-img-top"  src="https://images.unsplash.com/photo-1724770646663-2a806ed04ca4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="forest">
+                <img class="img-card card-img-top"  src="https://images.unsplash.com/photo-1724961459765-b97327879b93?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="cave">
+                <img class="img-card card-img-top"  src="https://plus.unsplash.com/premium_photo-1724409832241-44aefa67f262?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="house">
+              </div>      
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+              <div class="row">
+                <div id="columnablankizq" class="col-2"></div>
+                <!-- Columna con todos los posts -->
+                <div id="columnaprincipalfeed" class="col-6 mx-auto">
+                  <!-- Post 1 -->
+                  <div class="card my-1" style="width: 100%;">
+                    <div class="d-flex justify-content-between">
+                      <h4 class="card-title">Post 1</h4>
+                      <span></span>
+                      <span> 08/26</span>                    
+                    </div> 
+                    <img class="img-card card-img-top" src="https://images.unsplash.com/photo-1723053145751-9aacd7c47df1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D" alt="planta">
+                    <div class="card-body">
+                     <div class="row d-flex justify-content-start">
+                      <span class="fw-bold">204 likes</span>
+                     </div>
+                      <p class="card-text">Some quick example text to insert on the card title and make up the bulk of the
+                        card's content.</p>
+                    </div>
+                  </div>
+                    <!-- Post 2 -->
+                    <div class="card my-3" style="width: 100%;">
+                      <div class="d-flex justify-content-between">
+                        <h4 class="card-title">Post 2</h4>
+                        <span></span>
+                        <span> 08/26</span>                    
+                      </div> 
+                      <img class="img-card card-img-top" src="https://images.unsplash.com/photo-1724075682633-4664473db52c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3MHx8fGVufDB8fHx8fA%3D%3D" alt="walking">
+                      <div class="card-body">
+                       <div class="row d-flex justify-content-start">
+                        <span class="fw-bold">204 likes</span>
+                       </div>
+                        <p class="card-text">Some quick example text to insert on the card title and make up the bulk of the
+                          card's content.</p>
+                      </div>
+                    </div>
+                    <!-- Post 3 -->
+                      <div class="card my-3" style="width: 100%;">
+                        <div class="d-flex justify-content-between">
+                          <h4 class="card-title">Post 3</h4>
+                          <span></span>
+                          <span> 08/26</span>                    
+                        </div> 
+                        <img class="img-card card-img-top" src="https://images.unsplash.com/photo-1668302785920-00972ac2b266?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDh8fHxlbnwwfHx8fHw%3D" alt="perrito">
+                        <div class="card-body">
+                         <div class="row d-flex justify-content-start">
+                          <span class="fw-bold">204 likes</span>
+                         </div>
+                          <p class="card-text">Some quick example text to insert on the card title and make up the bulk of the
+                            card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div id="columnablankder"  class="col-2"></div>
+              </div>
+            </div>
+        </div>
+      </body>
+</body>
+</html>
+
+
+
+
+
+<div id="divisor de tabs" class="row">
+    <ul class="nav nav-pills mb-3 justify-content-center" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+          role="tab" aria-controls="pills-home" aria-selected="false"><span class="material-symbols-outlined">
+            apps
+          </span></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab"><i class="fa-solid fa-square"></i></button>
+      </li>
+    </ul>
+  </div>
+    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+      tabindex="0">
+      <div class="row">
+        <img class="img-box" src="https://images.unsplash.com/photo-1723053145751-9aacd7c47df1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D" alt="planta">
+        <img class="img-box" src="https://images.unsplash.com/photo-1724075682633-4664473db52c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3MHx8fGVufDB8fHx8fA%3D%3D" alt="walking">
+        <img class="img-box"  src="https://images.unsplash.com/photo-1668302785920-00972ac2b266?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDh8fHxlbnwwfHx8fHw%3D" alt="perrito">          
+        
+      </div>      
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+      <div class="row">
+        <div id="columnablankizq" class="col-2"></div>
+        <!-- Columna con todos los posts -->
+        <div id="columnaprincipalfeed" class="col-6 mx-auto">
+          <!-- Post 1 -->
+          <div class="card my-1" style="width: 100%;">
+            <div class="d-flex justify-content-between">
+              <h4 class="card-title">Post 1</h4>
+              <span></span>
+              <span> 08/26</span>                    
+            </div> 
+            <img class="img-card card-img-top" src="https://images.unsplash.com/photo-1723053145751-9aacd7c47df1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MHx8fGVufDB8fHx8fA%3D%3D" alt="planta">
+            <div class="card-body">
+             <div class="row d-flex justify-content-start">
+              <span class="fw-bold">204 likes</span>
+             </div>
+              <p class="card-text">Some quick example text to insert on the card title and make up the bulk of the
+                card's content.</p>
+            </div>
+          </div>
+            <!-- Post 2 -->
+            <div class="card my-3" style="width: 100%;">
+              <div class="d-flex justify-content-between">
+                <h4 class="card-title">Post 2</h4>
+                <span></span>
+                <span> 08/26</span>                    
+              </div> 
+              <img class="img-card card-img-top" src="https://images.unsplash.com/photo-1724075682633-4664473db52c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3MHx8fGVufDB8fHx8fA%3D%3D" alt="walking">
+              <div class="card-body">
+               <div class="row d-flex justify-content-start">
+                <span class="fw-bold">204 likes</span>
+               </div>
+                <p class="card-text">Some quick example text to insert on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+            <!-- Post 3 -->
+              <div class="card my-3" style="width: 100%;">
+                <div class="d-flex justify-content-between">
+                  <h4 class="card-title">Post 3</h4>
+                  <span></span>
+                  <span> 08/26</span>                    
+                </div> 
+                <img class="img-card card-img-top" src="https://images.unsplash.com/photo-1668302785920-00972ac2b266?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDh8fHxlbnwwfHx8fHw%3D" alt="perrito">
+                <div class="card-body">
+                 <div class="row d-flex justify-content-start">
+                  <span class="fw-bold">204 likes</span>
+                 </div>
+                  <p class="card-text">Some quick example text to insert on the card title and make up the bulk of the
+                    card's content.</p>
+                </div>
+              </div>
+        </div>
+        <div id="columnablankder"  class="col-2"></div>
+      </div>
+    </div>
+</div>
